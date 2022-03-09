@@ -1,6 +1,6 @@
 # React HTML Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Creating React builder for HTML emails while being able to fetch API to develope template
 
 ## Available Scripts
 
