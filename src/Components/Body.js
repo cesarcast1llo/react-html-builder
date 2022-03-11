@@ -10,7 +10,7 @@ const bodyStyles = {
     },
 };
 
-function Body({ children, style = {} }) {
+function Body ({ children, style = {} }) {
   return (
     <body style={{ ...bodyStyles.body, ...style }}>
        {children}
