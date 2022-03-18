@@ -1,0 +1,80 @@
+{
+  "jobTitle": "Customer Service Representative",
+  "jobLocation": "Austin, TX",
+  "candidateInterviewCount": 5,
+  "candidateInterviewDate": "Wed, June 5",
+  "candidateInterviewDataById": {
+    "2373587f6d09": {
+      "name": "Debora Machado",
+      "lastCompany": "Aero Tech Solutions",
+      "lastJobTitle": "Senior Technical Support Representative",
+      "qualityCriteria": [
+        {
+          "label": "Education: Bachelor&#39;s (Preferred)",
+          "met": true
+        },
+        {
+          "label": "Has a cover letter",
+          "met": false
+        }
+      ],
+      "oneLinerPresentation": "I believe that my 6 years of customer service experience makes me a very good fit for this position. I have a spotless customer satisfaction record. I communicate well. I work 10-hour shifts now I am used to long hours. I also take pride in my attendance record.",
+      "interviewType": "VIDEO",
+      "interviewTime": "9:00 AM EST"
+    },
+    "2373587f6d01": {
+      "name": "Chiq Mbandi",
+      "lastCompany": "AmTrak",
+      "lastJobTitle": "Customer Service Representative",
+      "qualityCriteria": [
+        {
+          "label": "Education: Bachelor&#39;s (Preferred)",
+          "met": true
+        },
+        {
+          "label": "Has a cover letter",
+          "met": true
+        }
+      ],
+      "oneLinerPresentation": "I have previous customer service experience always enjoyed being in the customer service role I have a good Telephone manner and appearance clear speaking and empathetic.",
+      "interviewType": "PHONE",
+      "interviewTime": "9:00 AM EST"
+    },
+    "2373587f6d02": {
+      "name": "Jason Pun",
+      "lastCompany": "Bell South",
+      "lastJobTitle": "Customer Service Representative",
+      "qualityCriteria": [
+        {
+          "label": "Education: Bachelor&#39;s (Preferred)",
+          "met": false
+        },
+        {
+          "label": "Has a cover letter",
+          "met": false
+        }
+      ],
+      "oneLinerPresentation": "",
+      "interviewType": "IN-PERSON",
+      "interviewTime": "9:30 AM EST"
+    },
+    "2373587f6d03": {
+      "name": "Nick Thompson",
+      "lastCompany": "FedEx",
+      "lastJobTitle": "Customer Service Representative",
+      "qualityCriteria": [
+        {
+          "label": "Education: Bachelor&#39;s (Preferred)",
+          "met": false
+        },
+        {
+          "label": "Has a cover letter",
+          "met": false
+        }
+      ],
+      "oneLinerPresentation": "",
+      "interviewType": "VIDEO",
+      "interviewTime": "10:30 AM EST"
+    }
+  }
+}

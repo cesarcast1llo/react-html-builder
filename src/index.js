@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Email from './Email';
+import App from './App';
 
 ReactDOM.render(
-    <Email />,
+  <>
+  <App />
+    {/* <Email /> */}
+    </>,
   document.getElementById('root')
 );
