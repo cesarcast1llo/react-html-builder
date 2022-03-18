@@ -1,18 +1,8 @@
 import React from 'react';
 import Tr from './Tr';
 import Td from './Td';
-import Container from './Container';
 
-function Table({
-  children,
-  className,
-  align,
-  width,
-  style,
-  colSpan,
-  containerClass,
-  containerWidth,
-}) {
+function Table({ children, className, align, width, style, open }) {
   return (
     <table
       role="presentation"
@@ -20,19 +10,18 @@ function Table({
       cellSpacing="0"
       cellPadding="0"
       className={className}
-      align={align}
-      width={width}
+      align={align ? align : 'center'}
+      width={width ? width : '100%'}
       style={style}
-      colSpan={colSpan}
     >
       <tbody>
-        <Tr>
-          <Td>
-            <Container className={containerClass} width={containerWidth}>
-              {children}
-            </Container>
-          </Td>
-        </Tr>
+        {open ? (
+          <Tr>
+            <Td>{children}</Td>
+          </Tr>
+        ) : (
+          ' do nothing'
+        )}
       </tbody>
     </table>
   );

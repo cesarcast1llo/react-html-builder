@@ -9,9 +9,9 @@ function Container({ children, containerClass, containerWidth }) {
       border="0"
       cellSpacing="0"
       cellPadding="0"
-      className="container"
+      className={'container' + containerClass}
       align="center"
-      width="488"
+      width={containerWidth}
     >
       <tbody>
         <Tr>
