@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Td({ children, className, align, style }) {
+function Td({ children, className, align, style = {} }) {
   return (
     <td
       align={align ? align : 'center'}
       valign="top"
       className={className}
-      style={style}
+      style={{ ...style }}
     >
       {children}
     </td>

@@ -1,8 +1,16 @@
 import React from 'react';
-import Tr from './Tr';
-import Td from './Td';
+// import Tr from './Tr';
+// import Td from './Td';
 
-function Table({ children, className, align, width, style, open }) {
+function Table({
+  children,
+  className,
+  align,
+  width,
+  bgColor,
+  style = {},
+  // open,
+}) {
   return (
     <table
       role="presentation"
@@ -12,16 +20,17 @@ function Table({ children, className, align, width, style, open }) {
       className={className}
       align={align ? align : 'center'}
       width={width ? width : '100%'}
-      style={style}
+      style={{ width: width + 'px', backgroundColor: bgColor, ...style }}
     >
       <tbody>
-        {open ? (
+        {/* {open ? (
           <Tr>
             <Td>{children}</Td>
           </Tr>
         ) : (
           ' do nothing'
-        )}
+        )} */}
+        {children}
       </tbody>
     </table>
   );
