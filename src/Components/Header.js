@@ -12,7 +12,7 @@ function Header({ data }) {
       <Table align="center" className="main" width="600" bgColor="#feffff">
         <Tr>
           <Td>
-            <Table className="container" width="450" open>
+            <Table className="container" width="488" open>
               <Spacer height="20" />
               <Tr>
                 <Td align="center" style={{ textAlign: 'left' }}>
@@ -27,7 +27,7 @@ function Header({ data }) {
       <Table align="center" className="main" width="600" bgColor="#001C40">
         <Tr>
           <Td>
-            <Table className="container" width="450">
+            <Table className="container" width="488">
               <Spacer height="16" />
               <Tr>
                 <Td
