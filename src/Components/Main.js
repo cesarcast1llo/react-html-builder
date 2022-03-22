@@ -3,6 +3,7 @@ import Table from './ReusableElements/Table';
 import Tr from './ReusableElements/Tr';
 import Td from './ReusableElements/Td';
 import Spacer from './ReusableElements/Spacer';
+import Cta from './ReusableElements/Cta';
 import EmployeeModal from './ReusableElements/EmployeeModal/EmployeeModal';
 import video from '../Assets/Images/video.png';
 import phone from '../Assets/Images/phone.png';
@@ -160,6 +161,8 @@ const Main = ({ data }) => {
                   data.candidateInterviewDataById['2373587f6d03'].lastCompany
                 }
               />
+              <Cta bgColor="#2557A7" cta="Review candidates" />
+              <Spacer height="42" />
             </Table>
           </Td>
         </Tr>
