@@ -7,10 +7,20 @@ import Spacer from '../../Spacer';
 import video from '../../../../Assets/Images/video.png';
 import jobIcon from '../../../../Assets/Images/jobIcon.png';
 
-const TimeNameTitle = ({ intTime, intType, name, jobTitle, lastCompany }) => {
+const TimeNameTitle = ({
+  intTime,
+  intType,
+  name,
+  jobTitle,
+  lastCompany,
+  fB,
+}) => {
+  const reg = '<Table >';
   return (
+    <>
+    {fb ? (
     <Table style={{ borderBottom: '1px solid #E4E2E0' }}>
-      <Spacer height="32" />
+    ) : (reg) }
       <Tr>
         <Td style={{ padding: '0 24px' }}>
           <Table>
@@ -92,6 +102,7 @@ const TimeNameTitle = ({ intTime, intType, name, jobTitle, lastCompany }) => {
       </Tr>
       <Spacer height="16" />
     </Table>
+    </>
   );
 };
 

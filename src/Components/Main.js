@@ -86,6 +86,52 @@ const Main = ({ data }) => {
                     .oneLinerPresentation
                 }
               />
+              <Spacer height="16" />
+              <EmployeeModal
+                data={data}
+                intTime={
+                  data.candidateInterviewDataById['2373587f6d01'].interviewTime
+                }
+                intType={
+                  data.candidateInterviewDataById['2373587f6d01'].interviewType
+                }
+                name={data.candidateInterviewDataById['2373587f6d01'].name}
+                jobTitle={
+                  data.candidateInterviewDataById['2373587f6d01'].lastJobTitle
+                }
+                lastCompany={
+                  data.candidateInterviewDataById['2373587f6d01'].lastCompany
+                }
+                education={
+                  data.candidateInterviewDataById['2373587f6d01']
+                    .qualityCriteria[0].label
+                }
+                education_1={
+                  data.candidateInterviewDataById['2373587f6d01']
+                    .qualityCriteria[1].label
+                }
+                interest={
+                  data.candidateInterviewDataById['2373587f6d01']
+                    .oneLinerPresentation
+                }
+              />
+              <Spacer height="16" />
+              <EmployeeModal
+                data={data}
+                intTime={
+                  data.candidateInterviewDataById['2373587f6d02'].interviewTime
+                }
+                intType={
+                  data.candidateInterviewDataById['2373587f6d02'].interviewType
+                }
+                name={data.candidateInterviewDataById['2373587f6d02'].name}
+                jobTitle={
+                  data.candidateInterviewDataById['2373587f6d02'].lastJobTitle
+                }
+                lastCompany={
+                  data.candidateInterviewDataById['2373587f6d02'].lastCompany
+                }
+              />
             </Table>
           </Td>
         </Tr>
