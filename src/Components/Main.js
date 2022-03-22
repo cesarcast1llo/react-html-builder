@@ -3,16 +3,16 @@ import Table from './ReusableElements/Table';
 import Tr from './ReusableElements/Tr';
 import Td from './ReusableElements/Td';
 import Spacer from './ReusableElements/Spacer';
-import data from '../LocalJson/example.json';
+import EmployeeModal from './ReusableElements/EmployeeModal/EmployeeModal';
 
-function Main({}) {
+function Main({ data }) {
   return (
     <>
-      <Table align="center" className="main" width="600" bgColor="#feffff">
+      <Table align="center" className={'main'} width={'600'} bgColor="#feffff">
         <Tr>
           <Td>
             <Table className="container" width="488">
-              <Spacer height="49" />
+              <Spacer height="40" />
               <Tr>
                 <Td
                   align="center"
@@ -29,7 +29,7 @@ function Main({}) {
                   Your daily summary
                 </Td>
               </Tr>
-              <Spacer height="62" />
+              <Spacer height="40" />
               <Tr>
                 <Td
                   align="center"
@@ -42,7 +42,7 @@ function Main({}) {
                     textAlign: 'left',
                   }}
                 >
-                  {data.candidateInterviewDataById} upcoming interviews
+                  {data.candidateInterviewCount} upcoming interviews
                 </Td>
               </Tr>
               <Spacer height="24" />
@@ -61,6 +61,8 @@ function Main({}) {
                   {data.candidateInterviewDate}
                 </Td>
               </Tr>
+              <Spacer height="16" />
+              <EmployeeModal data={data} />
             </Table>
           </Td>
         </Tr>

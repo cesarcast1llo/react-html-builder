@@ -9,14 +9,19 @@ import Indeed from '../Assets/Images/indeed_for_employers.png';
 function Header({ data }) {
   return (
     <>
-      <Table align="center" className="main" width="600" bgColor="#feffff">
+      <Table align="center" className={'main'} width={'600'} bgColor="#feffff">
         <Tr>
           <Td>
             <Table className="container" width="488" open>
               <Spacer height="20" />
               <Tr>
                 <Td align="center" style={{ textAlign: 'left' }}>
-                  <Img src={Indeed} alt="Indeed for employers" width="183" />
+                  <Img
+                    src={Indeed}
+                    alt="Indeed for employers"
+                    width="183"
+                    style={{ display: 'block' }}
+                  />
                 </Td>
               </Tr>
               <Spacer height="20" />
@@ -24,7 +29,7 @@ function Header({ data }) {
           </Td>
         </Tr>
       </Table>
-      <Table align="center" className="main" width="600" bgColor="#001C40">
+      <Table align="center" className={'main'} width={'600'} bgColor="#001C40">
         <Tr>
           <Td>
             <Table className="container" width="488">

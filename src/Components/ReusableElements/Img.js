@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Img({ alt, className, src, width }) {
+function Img({ alt, className, src, width, style }) {
   return (
     <img
       alt={alt}
@@ -9,9 +9,9 @@ function Img({ alt, className, src, width }) {
       width={width}
       border="0"
       style={{
-        display: 'block',
         width: '100%',
         maxWidth: width + 'px',
+        ...style,
       }}
     />
   );
