@@ -4,6 +4,9 @@ import Tr from './ReusableElements/Tr';
 import Td from './ReusableElements/Td';
 import Spacer from './ReusableElements/Spacer';
 import EmployeeModal from './ReusableElements/EmployeeModal/EmployeeModal';
+import video from '../Assets/Images/video.png';
+import phone from '../Assets/Images/phone.png';
+import location from '../Assets/Images/location.png';
 
 const Main = ({ data }) => {
   return (
@@ -70,10 +73,12 @@ const Main = ({ data }) => {
                 intType={
                   data.candidateInterviewDataById['2373587f6d09'].interviewType
                 }
+                typeOfCall={video}
                 name={data.candidateInterviewDataById['2373587f6d09'].name}
                 jobTitle={
                   data.candidateInterviewDataById['2373587f6d09'].lastJobTitle
                 }
+                bb_1={{ borderBottom: '1px solid #E4E2E0' }}
                 lastCompany={
                   data.candidateInterviewDataById['2373587f6d09'].lastCompany
                 }
@@ -81,6 +86,7 @@ const Main = ({ data }) => {
                   data.candidateInterviewDataById['2373587f6d09']
                     .qualityCriteria[0].label
                 }
+                bb_2={{ borderBottom: '1px solid #E4E2E0' }}
                 interest={
                   data.candidateInterviewDataById['2373587f6d09']
                     .oneLinerPresentation
@@ -95,10 +101,12 @@ const Main = ({ data }) => {
                 intType={
                   data.candidateInterviewDataById['2373587f6d01'].interviewType
                 }
+                typeOfCall={phone}
                 name={data.candidateInterviewDataById['2373587f6d01'].name}
                 jobTitle={
                   data.candidateInterviewDataById['2373587f6d01'].lastJobTitle
                 }
+                bb_1={{ borderBottom: '1px solid #E4E2E0' }}
                 lastCompany={
                   data.candidateInterviewDataById['2373587f6d01'].lastCompany
                 }
@@ -106,6 +114,7 @@ const Main = ({ data }) => {
                   data.candidateInterviewDataById['2373587f6d01']
                     .qualityCriteria[0].label
                 }
+                bb_2={{ borderBottom: '1px solid #E4E2E0' }}
                 education_1={
                   data.candidateInterviewDataById['2373587f6d01']
                     .qualityCriteria[1].label
@@ -124,12 +133,31 @@ const Main = ({ data }) => {
                 intType={
                   data.candidateInterviewDataById['2373587f6d02'].interviewType
                 }
+                typeOfCall={location}
                 name={data.candidateInterviewDataById['2373587f6d02'].name}
                 jobTitle={
                   data.candidateInterviewDataById['2373587f6d02'].lastJobTitle
                 }
                 lastCompany={
                   data.candidateInterviewDataById['2373587f6d02'].lastCompany
+                }
+              />
+              <Spacer height="16" />
+              <EmployeeModal
+                data={data}
+                intTime={
+                  data.candidateInterviewDataById['2373587f6d03'].interviewTime
+                }
+                intType={
+                  data.candidateInterviewDataById['2373587f6d03'].interviewType
+                }
+                typeOfCall={video}
+                name={data.candidateInterviewDataById['2373587f6d03'].name}
+                jobTitle={
+                  data.candidateInterviewDataById['2373587f6d03'].lastJobTitle
+                }
+                lastCompany={
+                  data.candidateInterviewDataById['2373587f6d03'].lastCompany
                 }
               />
             </Table>

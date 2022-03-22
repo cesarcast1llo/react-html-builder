@@ -4,7 +4,6 @@ import Tr from '../../Tr';
 import Td from '../../Td';
 import Img from '../../Img';
 import Spacer from '../../Spacer';
-import video from '../../../../Assets/Images/video.png';
 import jobIcon from '../../../../Assets/Images/jobIcon.png';
 
 const TimeNameTitle = ({
@@ -13,14 +12,11 @@ const TimeNameTitle = ({
   name,
   jobTitle,
   lastCompany,
-  fB,
+  bb_1,
+  typeOfCall,
 }) => {
-  const reg = '<Table >';
   return (
-    <>
-    {fb ? (
-    <Table style={{ borderBottom: '1px solid #E4E2E0' }}>
-    ) : (reg) }
+    <Table style={bb_1}>
       <Tr>
         <Td style={{ padding: '0 24px' }}>
           <Table>
@@ -50,8 +46,8 @@ const TimeNameTitle = ({
               >
                 {/* if statement here gathering json res to update accordingly to result */}
                 <Img
-                  src={video}
-                  alt="Check"
+                  src={typeOfCall}
+                  alt="Type of call"
                   width="16"
                   style={{ marginRight: '10px' }}
                 />
@@ -102,7 +98,6 @@ const TimeNameTitle = ({
       </Tr>
       <Spacer height="16" />
     </Table>
-    </>
   );
 };
 
