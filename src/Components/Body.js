@@ -7,12 +7,16 @@ const bodyStyles = {
     WebkitFontSmoothing: 'antialiased',
     margin: '0 auto',
     padding: '0',
+    textAlign: 'center',
   },
 };
 
-const Body = ({ children, style = {}, bgColor }) => {
+const Body = ({ children, className, style = {}, bgColor }) => {
   return (
-    <body style={{ ...bodyStyles.body, ...style, backgroundColor: bgColor }}>
+    <body
+      className={className}
+      style={{ ...bodyStyles.body, ...style, backgroundColor: bgColor }}
+    >
       {children}
     </body>
   );

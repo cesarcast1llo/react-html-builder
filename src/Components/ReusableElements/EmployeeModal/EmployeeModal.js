@@ -5,7 +5,16 @@ import TimeNameTitle from './Components/TimeNameTitle';
 import Education from './Components/Education';
 import Interest from './Components/Interest';
 
-const EmployeeModal = ({ data, intTime }) => {
+const EmployeeModal = ({
+  data,
+  intTime,
+  intType,
+  name,
+  jobTitle,
+  lastCompany,
+  education,
+  interest,
+}) => {
   return (
     <Tr>
       <Td
@@ -14,9 +23,16 @@ const EmployeeModal = ({ data, intTime }) => {
           borderRadius: '16px',
         }}
       >
-        <TimeNameTitle data={data} />
-        <Education data={data} intTime={intTime} />
-        <Interest data={data} />
+        <TimeNameTitle
+          data={data}
+          intType={intType}
+          intTime={intTime}
+          name={name}
+          jobTitle={jobTitle}
+          lastCompany={lastCompany}
+        />
+        <Education education={education} />
+        <Interest interest={interest} />
       </Td>
     </Tr>
   );

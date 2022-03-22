@@ -62,7 +62,30 @@ const Main = ({ data }) => {
                 </Td>
               </Tr>
               <Spacer height="16" />
-              <EmployeeModal data={data} />
+              <EmployeeModal
+                data={data}
+                intTime={
+                  data.candidateInterviewDataById['2373587f6d09'].interviewTime
+                }
+                intType={
+                  data.candidateInterviewDataById['2373587f6d09'].interviewType
+                }
+                name={data.candidateInterviewDataById['2373587f6d09'].name}
+                jobTitle={
+                  data.candidateInterviewDataById['2373587f6d09'].lastJobTitle
+                }
+                lastCompany={
+                  data.candidateInterviewDataById['2373587f6d09'].lastCompany
+                }
+                education={
+                  data.candidateInterviewDataById['2373587f6d09']
+                    .qualityCriteria[0].label
+                }
+                interest={
+                  data.candidateInterviewDataById['2373587f6d09']
+                    .oneLinerPresentation
+                }
+              />
             </Table>
           </Td>
         </Tr>

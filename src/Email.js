@@ -1,14 +1,24 @@
 import React from 'react';
+// import Body from './Components/Body';
 import Table from './Components/ReusableElements/Table';
 import Header from './Components/Header';
 import Main from './Components/Main';
+// import Tr from './Components/ReusableElements/Tr';
+// import Td from './Components/ReusableElements/Td';
+import data from './LocalJson/example.json';
 
-const Email = ({ data }) => {
+const Email = () => {
   return (
-    <Table align="center" className={'main'} width={'600'} bgColor="#feffff">
+    // <Body align="center" className="wrapper" bgColor="#f4f4f4">
+    //   <Tr>
+    //     <Td>
+    <Table align="center" className="main" width="600" bgColor="#feffff">
       <Header data={data} />
       <Main data={data} />
     </Table>
+    //     </Td>
+    //   </Tr>
+    // </Body>
   );
 };
 

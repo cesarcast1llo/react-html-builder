@@ -4,7 +4,7 @@ import Tr from '../../Tr';
 import Td from '../../Td';
 import Spacer from '../../Spacer';
 
-const Interest = ({ data }) => {
+const Interest = ({ interest }) => {
   return (
     <Table style={{ borderBottom: '1px solid #E4E2E0' }}>
       <Spacer height="16" />
@@ -40,10 +40,7 @@ const Interest = ({ data }) => {
                   paddingLeft: '10px',
                 }}
               >
-                {
-                  data.candidateInterviewDataById['2373587f6d09']
-                    .oneLinerPresentation
-                }
+                {interest}
               </Td>
             </Tr>
           </Table>

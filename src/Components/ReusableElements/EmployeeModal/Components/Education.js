@@ -6,7 +6,7 @@ import Img from '../../Img';
 import Spacer from '../../Spacer';
 import checkMark from '../../../../Assets/Images/checkmark.png';
 
-const TimeNameTitle = ({ data }) => {
+const TimeNameTitle = ({ education }) => {
   return (
     <Table style={{ borderBottom: '1px solid #E4E2E0' }}>
       <Spacer height="16" />
@@ -44,10 +44,7 @@ const TimeNameTitle = ({ data }) => {
             width="16"
             style={{ marginRight: '10px' }}
           />
-          {
-            data.candidateInterviewDataById['2373587f6d09'].qualityCriteria[0]
-              .label
-          }
+          {education}
         </Td>
       </Tr>
       <Spacer height="16" />

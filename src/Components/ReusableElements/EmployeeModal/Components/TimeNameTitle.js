@@ -7,7 +7,7 @@ import Spacer from '../../Spacer';
 import video from '../../../../Assets/Images/video.png';
 import jobIcon from '../../../../Assets/Images/jobIcon.png';
 
-const TimeNameTitle = ({ data, intTime }) => {
+const TimeNameTitle = ({ intTime, intType, name, jobTitle, lastCompany }) => {
   return (
     <Table style={{ borderBottom: '1px solid #E4E2E0' }}>
       <Spacer height="32" />
@@ -45,7 +45,7 @@ const TimeNameTitle = ({ data, intTime }) => {
                   width="16"
                   style={{ marginRight: '10px' }}
                 />
-                {data.candidateInterviewDataById['2373587f6d09'].interviewType}
+                {intType}
               </Td>
             </Tr>
           </Table>
@@ -64,7 +64,7 @@ const TimeNameTitle = ({ data, intTime }) => {
             padding: '0 24px',
           }}
         >
-          {data.candidateInterviewDataById['2373587f6d09'].name}
+          {name}
         </Td>
       </Tr>
       <Spacer height="5" />
@@ -86,10 +86,8 @@ const TimeNameTitle = ({ data, intTime }) => {
             width="16"
             style={{ marginRight: '10px' }}
           />
-          {data.candidateInterviewDataById['2373587f6d09'].lastJobTitle},{' '}
-          <span style={{ fontWeight: 400 }}>
-            {data.candidateInterviewDataById['2373587f6d09'].lastCompany}
-          </span>
+          {jobTitle},&nbsp;
+          <span style={{ fontWeight: 400 }}>{lastCompany}</span>
         </Td>
       </Tr>
       <Spacer height="16" />
