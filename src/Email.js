@@ -12,7 +12,7 @@ const Email = () => {
     // <Body align="center" className="wrapper" bgColor="#f4f4f4">
     //   <Tr>
     //     <Td>
-    <Table align="center" className="main" width="600" bgColor="#feffff">
+    <Table align="center" className="wrapper" bgColor="#E5E5E5">
       <Header data={data} />
       <Main data={data} />
     </Table>

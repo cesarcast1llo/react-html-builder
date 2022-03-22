@@ -12,7 +12,7 @@ import location from '../Assets/Images/location.png';
 const Main = ({ data }) => {
   return (
     <>
-      <Table align="center" className={'main'} width={'600'} bgColor="#feffff">
+      <Table align="center" className="main" width="600" bgColor="#feffff">
         <Tr>
           <Td>
             <Table className="container" width="488">
@@ -93,7 +93,7 @@ const Main = ({ data }) => {
                     .oneLinerPresentation
                 }
               />
-              <Spacer height="16" />
+              <Spacer height="25" />
               <EmployeeModal
                 data={data}
                 intTime={
@@ -125,7 +125,7 @@ const Main = ({ data }) => {
                     .oneLinerPresentation
                 }
               />
-              <Spacer height="16" />
+              <Spacer height="25" />
               <EmployeeModal
                 data={data}
                 intTime={
@@ -143,7 +143,7 @@ const Main = ({ data }) => {
                   data.candidateInterviewDataById['2373587f6d02'].lastCompany
                 }
               />
-              <Spacer height="16" />
+              <Spacer height="25" />
               <EmployeeModal
                 data={data}
                 intTime={

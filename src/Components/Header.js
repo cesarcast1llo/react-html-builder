@@ -9,7 +9,7 @@ import Indeed from '../Assets/Images/indeed_for_employers.png';
 const Header = ({ data }) => {
   return (
     <>
-      <Table align="center" className={'main'} width={'600'} bgColor="#feffff">
+      <Table align="center" className="main" width="600" bgColor="#feffff">
         <Tr>
           <Td>
             <Table className="container" width="488" open>
@@ -29,7 +29,7 @@ const Header = ({ data }) => {
           </Td>
         </Tr>
       </Table>
-      <Table align="center" className={'main'} width={'600'} bgColor="#001C40">
+      <Table align="center" className="main" width="600" bgColor="#001C40">
         <Tr>
           <Td>
             <Table className="container" width="488">
