@@ -5,7 +5,7 @@ import TimeNameTitle from './Components/TimeNameTitle';
 import Education from './Components/Education';
 import Interest from './Components/Interest';
 
-function EmployeeModal({ data }) {
+const EmployeeModal = ({ data, intTime }) => {
   return (
     <Tr>
       <Td
@@ -15,11 +15,11 @@ function EmployeeModal({ data }) {
         }}
       >
         <TimeNameTitle data={data} />
-        <Education data={data} />
+        <Education data={data} intTime={intTime} />
         <Interest data={data} />
       </Td>
     </Tr>
   );
-}
+};
 
 export default EmployeeModal;

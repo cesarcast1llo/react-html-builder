@@ -2,7 +2,7 @@ import React from 'react';
 import Tr from './Tr';
 import Td from './Td';
 
-function Container({ children, containerClass, containerWidth }) {
+const Container = ({ children, containerClass, containerWidth }) => {
   return (
     <table
       role="presentation"
@@ -20,6 +20,6 @@ function Container({ children, containerClass, containerWidth }) {
       </tbody>
     </table>
   );
-}
+};
 
 export default Container;

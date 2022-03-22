@@ -6,7 +6,7 @@ import Spacer from './ReusableElements/Spacer';
 import Img from './ReusableElements/Img';
 import Indeed from '../Assets/Images/indeed_for_employers.png';
 
-function Header({ data }) {
+const Header = ({ data }) => {
   return (
     <>
       <Table align="center" className={'main'} width={'600'} bgColor="#feffff">
@@ -113,6 +113,6 @@ function Header({ data }) {
       </Table>
     </>
   );
-}
+};
 
 export default Header;

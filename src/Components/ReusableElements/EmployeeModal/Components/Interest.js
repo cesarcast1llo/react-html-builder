@@ -4,7 +4,7 @@ import Tr from '../../Tr';
 import Td from '../../Td';
 import Spacer from '../../Spacer';
 
-function Interest({ data }) {
+const Interest = ({ data }) => {
   return (
     <Table style={{ borderBottom: '1px solid #E4E2E0' }}>
       <Spacer height="16" />
@@ -52,6 +52,6 @@ function Interest({ data }) {
       <Spacer height="32" />
     </Table>
   );
-}
+};
 
 export default Interest;

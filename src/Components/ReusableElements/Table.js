@@ -2,7 +2,7 @@ import React from 'react';
 // import Tr from './Tr';
 // import Td from './Td';
 
-function Table({
+const Table = ({
   children,
   className,
   align,
@@ -10,7 +10,7 @@ function Table({
   bgColor,
   style = {},
   // open,
-}) {
+}) => {
   return (
     <table
       role="presentation"
@@ -34,6 +34,6 @@ function Table({
       </tbody>
     </table>
   );
-}
+};
 
 export default Table;

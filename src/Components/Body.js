@@ -10,12 +10,12 @@ const bodyStyles = {
   },
 };
 
-function Body({ children, style = {}, bgColor }) {
+const Body = ({ children, style = {}, bgColor }) => {
   return (
     <body style={{ ...bodyStyles.body, ...style, backgroundColor: bgColor }}>
       {children}
     </body>
   );
-}
+};
 
 export default Body;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Td({ children, className, align, style = {} }) {
+const Td = ({ children, className, align, style = {} }) => {
   return (
     <td
       align={align ? align : 'center'}
@@ -11,6 +11,6 @@ function Td({ children, className, align, style = {} }) {
       {children}
     </td>
   );
-}
+};
 
 export default Td;

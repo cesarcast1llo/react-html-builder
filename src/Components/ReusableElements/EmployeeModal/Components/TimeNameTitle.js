@@ -7,7 +7,7 @@ import Spacer from '../../Spacer';
 import video from '../../../../Assets/Images/video.png';
 import jobIcon from '../../../../Assets/Images/jobIcon.png';
 
-function TimeNameTitle({ data }) {
+const TimeNameTitle = ({ data, intTime }) => {
   return (
     <Table style={{ borderBottom: '1px solid #E4E2E0' }}>
       <Spacer height="32" />
@@ -25,7 +25,7 @@ function TimeNameTitle({ data }) {
                   fontWeight: '700',
                 }}
               >
-                {data.candidateInterviewDataById['2373587f6d09'].interviewTime}
+                {intTime}
               </Td>
               <Td
                 align="right"
@@ -95,6 +95,6 @@ function TimeNameTitle({ data }) {
       <Spacer height="16" />
     </Table>
   );
-}
+};
 
 export default TimeNameTitle;

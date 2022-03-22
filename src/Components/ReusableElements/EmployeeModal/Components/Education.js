@@ -6,7 +6,7 @@ import Img from '../../Img';
 import Spacer from '../../Spacer';
 import checkMark from '../../../../Assets/Images/checkmark.png';
 
-function TimeNameTitle({ data }) {
+const TimeNameTitle = ({ data }) => {
   return (
     <Table style={{ borderBottom: '1px solid #E4E2E0' }}>
       <Spacer height="16" />
@@ -53,6 +53,6 @@ function TimeNameTitle({ data }) {
       <Spacer height="16" />
     </Table>
   );
-}
+};
 
 export default TimeNameTitle;

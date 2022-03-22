@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Img({ alt, className, src, width, style }) {
+const Img = ({ alt, className, src, width, style }) => {
   return (
     <img
       alt={alt}
@@ -15,6 +15,6 @@ function Img({ alt, className, src, width, style }) {
       }}
     />
   );
-}
+};
 
 export default Img;

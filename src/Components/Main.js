@@ -5,7 +5,7 @@ import Td from './ReusableElements/Td';
 import Spacer from './ReusableElements/Spacer';
 import EmployeeModal from './ReusableElements/EmployeeModal/EmployeeModal';
 
-function Main({ data }) {
+const Main = ({ data }) => {
   return (
     <>
       <Table align="center" className={'main'} width={'600'} bgColor="#feffff">
@@ -69,6 +69,6 @@ function Main({ data }) {
       </Table>
     </>
   );
-}
+};
 
 export default Main;
