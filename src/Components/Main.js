@@ -119,7 +119,11 @@ const Main = ({ data }) => {
                 jobTitle={interview_4.lastJobTitle}
                 lastCompany={interview_4.lastCompany}
               />
-              <Cta bgColor="#2557A7" cta="Review candidates" />
+              <Cta
+                bgColor="#2557A7"
+                cta="Review candidates"
+                url="https://www.indeed.com/"
+              />
               <Spacer height="42" />
             </Table>
           </Td>
