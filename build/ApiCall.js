@@ -2,23 +2,28 @@ const fs = require('fs');
 
 const fetch = require('node-fetch');
 
+// calling webpack file to gather components and build html file
 const createEmail = require('../server/createEmail');
 
-function fetchAPI() {
-  return fetch('https://www.metaweather.com/api/location/766273/')
-    .then((res) => res.json())
-    .then((res) => {
-      return res.map((data) => ({
-        jobTitle: data.jobTitle,
-      }));
-    });
-}
+// fetch api call from Email.js below
 
-// function createEmail(email) {
-//   return new Promise((resolve, reject) => {
-//     fs.writeFile('createEmail.html', email, (err) => {
-//       if (err) return reject(err);
-//       return resolve();
-//     });
-//   });
-// }
+// const [data, setData] = useState('');
+
+// // using useEffect hook to retrieve URL
+// useEffect(() => {
+//   const url = 'https://api.jsonbin.io/b/621fd0d97caf5d67835dcf84';
+
+//   // use async function to fetch our data
+//   // helps wait until promise is solved before continuing
+//   const fetchData = async () => {
+//     try {
+//       const response = await fetch(url);
+//       const json = await response.json();
+//       setData(json);
+//     } catch (error) {
+//       console.log('error', error);
+//     }
+//   };
+
+//   fetchData();
+// }, []);
