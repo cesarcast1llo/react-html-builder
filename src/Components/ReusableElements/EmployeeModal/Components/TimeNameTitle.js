@@ -44,7 +44,6 @@ const TimeNameTitle = ({
                   textAlign: 'right',
                 }}
               >
-                {/* if statement here gathering json res to update accordingly to result */}
                 <Img
                   src={typeOfCall}
                   alt="Type of call"
