@@ -17,7 +17,6 @@ const Main = ({ data }) => {
 
   return (
     <>
-      {console.log(interview_1)}
       <Table align="center" className="main" width="600" bgColor="#feffff">
         <Tr>
           <Td>

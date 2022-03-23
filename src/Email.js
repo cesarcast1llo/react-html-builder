@@ -4,21 +4,19 @@ import Header from './Components/Header';
 import Main from './Components/Main';
 import data from './LocalJson/example.json';
 
-const Email = () => {
+function Email() {
   // const [data, setData] = useState('');
 
-  // using useEffect hook to retrieve URL
+  // // using useEffect hook to retrieve URL
   // useEffect(() => {
   //   const url = 'https://api.jsonbin.io/b/621fd0d97caf5d67835dcf84';
 
-  // use async function to fetch our data
-  // helps wait until promise is solved before continuing
-
+  //   // use async function to fetch our data
+  //   // helps wait until promise is solved before continuing
   //   const fetchData = async () => {
   //     try {
   //       const response = await fetch(url);
   //       const json = await response.json();
-  //       console.log(json);
   //       setData(json);
   //     } catch (error) {
   //       console.log('error', error);
@@ -34,6 +32,6 @@ const Email = () => {
       <Main data={data} />
     </Table>
   );
-};
+}
 
 export default Email;
