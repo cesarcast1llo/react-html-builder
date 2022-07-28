@@ -6,6 +6,7 @@ Creating React builder for HTML emails while being able to fetch API to develope
 
 In the project directory, you can run:
 
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
